@@ -7,9 +7,7 @@
 @import '../partials/layout'; // responsive grid and media queries
 
 /* -------------------------------- 
-
 Primary style
-
 -------------------------------- */
 
 html * {
@@ -48,9 +46,7 @@ h1, h2 {
 }
 
 /* -------------------------------- 
-
 Modules - reusable parts of our design
-
 -------------------------------- */
 
 .btn {
@@ -83,9 +79,7 @@ Modules - reusable parts of our design
 }
 
 /* -------------------------------- 
-
 Main components 
-
 -------------------------------- */
 
 html, body {
@@ -96,7 +90,7 @@ html, body {
 .cd-header {
 	position: fixed;
 	top: 0;
-	left: 0;
+	right: 0;
 	z-index: 3;
 	width: 100%;
 	height: $header-height-S;
@@ -113,7 +107,7 @@ html, body {
 	@include transition(transform .3s);
 
 	#cd-logo {
-		float: left;
+		float: right;
 		margin: 18px 0 0 5%;
 
 		img {
@@ -226,11 +220,11 @@ html, body {
 		position: absolute;
 		top: 50%;
 		@include transform(translateY(-50%));
-		left: 10%;
+		right: 10%;
 		width: 50%;
 
 		padding: 0;
-		text-align: left;
+		text-align: right;
 
 		-webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
 		-moz-transition: -moz-transform 0.3s 0s, opacity 0.3s;
@@ -269,7 +263,7 @@ html, body {
 		margin: 0 auto;
 		height: 500px;
 		top: 50%;
-		left: 0;
+		right: 0;
 		@include transform(translateZ(0));
 		@include transform(translateY(-50%) translateX(75%));
 		@include transition(transform .3s);
@@ -326,8 +320,8 @@ html, body {
 		position: absolute;
 		top: 50%;
 		@include transform(translateY(-50%));
-		left: 0;
-		text-align: left;
+		right: 0;
+		text-align: right;
 		border-top: none;
 		padding: 0;
 		visibility: visible;
@@ -391,7 +385,7 @@ html, body {
 		float: right;
 
 		.cd-single-item:nth-child(2n) & {
-			float: left;
+			float: right;
 		}
 	}
 
@@ -418,7 +412,7 @@ html, body {
 			display: block;
 			position: absolute;
 			width: 402px;
-			left: 50%;
+			right: 50%;
 		    top: 50%;
 		    bottom: auto;
 		    right: auto;
@@ -444,7 +438,7 @@ html, body {
 	@include box-sizing(content-box);
 	position: absolute;
 	top: -45px;
-	left: -10px;
+	right: -10px;
 	width: 100%;
 	height: 100%;
 	border-color: darken($color-1, 8%);
@@ -487,7 +481,7 @@ html, body {
 	display: none;
 	position: fixed;
 	bottom: 0;
-	left: 0;
+	right: 0;
 	z-index: 1;
 	width: 100%;
 	height: 80px;
@@ -526,7 +520,7 @@ html, body {
 	}
 
 	.cd-next {
-		border-left: 1px solid $color-1; 
+		border-right: 1px solid $color-1; 
 	}
 
 	.cd-next::before {
@@ -560,7 +554,7 @@ html, body {
 	/*top loading bar*/
 	position: fixed;
 	top: 0;
-	left: 0;
+	right: 0;
 	height: 3px;
 	width: 0;
 	background-color: $color-2;
