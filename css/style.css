@@ -141,7 +141,7 @@ Main components
     left: 0;
     width: 50%;
     padding: 0;
-    text-align: left;
+    text-align: right;
     -webkit-transition: -webkit-transform 0.6s, opacity 0.6s;
     -moz-transition: -moz-transform 0.6s, opacity 0.6s;
     transition: transform 0.6s, opacity 0.6s;
@@ -258,7 +258,7 @@ Main components
   clear: both;
 }
 .no-csstransforms3d .cd-product-mockup {
-  float: right;
+  float: left;
 }
 .no-csstransforms3d .cd-product-mockup::before {
   display: none;
