@@ -342,11 +342,11 @@ html, body {
   }
   .cd-single-item .cd-caption {
     width: 50%;
-    float: left;
+    float: right;
     margin-top: 180px;
   }
   .cd-single-item:nth-child(2n) .cd-caption {
-    float: right;
+    float: left;
   }
 }
 @media only screen and (min-width: 1070px) {
