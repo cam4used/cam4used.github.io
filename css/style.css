@@ -359,7 +359,7 @@ html, body {
     -o-transform: translateY(-50%);
     transform: translateY(-50%);
     left: 0;
-    text-align: left;
+    text-align: right;
     border-top: none;
     padding: 0;
     visibility: visible;
@@ -382,7 +382,7 @@ html, body {
   }
   .cd-single-item .cd-caption {
     width: 60%;
-    float: right;
+    float: left;
     margin: 80px 0 0 5%;
     opacity: 0;
     -webkit-transform: translateZ(0);
@@ -423,17 +423,17 @@ html, body {
 }
 @media only screen and (min-width: 850px) {
   .cd-image-container {
-    float: right;
+    float: left;
   }
   .cd-single-item:nth-child(2n) .cd-image-container {
-    float: left;
+    float: right;
   }
 }
 @media only screen and (min-width: 1070px) {
   .cd-image-container {
     height: 402px;
     width: 35%;
-    float: left;
+    float: right;
     max-width: none;
     padding-top: 0;
   }
