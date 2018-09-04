@@ -21,7 +21,7 @@ html * {
 body {
   font-size: 1.6rem;
   font-family: "Tajawal", serif;
-  color: #a29cc2;
+  color: #33687b;
   background-color: #63a0b5;
 }
 
@@ -64,7 +64,7 @@ Modules - reusable parts of our design
   font-size: 1.2rem;
   font-family: "Tajawal", sans-serif;
   color: #ffffff;
-  background-color: #685f99;
+  background-color: #33687b;
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.2);
 }
 .no-touch .cd-btn:hover {
