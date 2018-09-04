@@ -116,7 +116,7 @@ html, body {
   clear: both;
 }
 .cd-header #cd-logo {
-  float: left;
+  float: right;
   margin: 18px 0 0 5%;
 }
 .cd-header #cd-logo img {
@@ -126,7 +126,7 @@ html, body {
 }
 .cd-header #cd-action {
   display: inline-block;
-  float: right;
+  float: left;
   margin: 10px 5% 0 0;
 }
 .cd-header .btn {
