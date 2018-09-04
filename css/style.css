@@ -68,7 +68,7 @@ Modules - reusable parts of our design
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.2);
 }
 .no-touch .cd-btn:hover {
-  background-color: #756da4;
+  background-color: #50aece;
 }
 @media only screen and (min-width: 1170px) {
   .cd-btn {
@@ -451,7 +451,7 @@ Main components
   left: 14%;
 }
 .cd-single-point.is-open > a {
-  background-color: #685f99;
+  background-color: #50aece;
 }
 .cd-single-point.is-open > a::after, .cd-single-point.is-open > a::before {
   -webkit-transform: translateX(-50%) translateY(-50%) rotate(135deg);
@@ -477,7 +477,7 @@ Main components
   transition: opacity 0.3s 0s, visibility 0s 0s, transform 0.3s 0s, top 0.3s 0s, bottom 0.3s 0s, left 0.3s 0s, right 0.3s 0s;
 }
 .cd-single-point.visited > a {
-  background-color: #685f99;
+  background-color: #50aece;
 }
 .cd-single-point.visited::after {
   /* pulse effect no more active on visited elements */
