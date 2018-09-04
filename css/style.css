@@ -513,8 +513,8 @@ html, body {
 .cd-phone-frame::after, .cd-phone-frame::before {
   /*these are the iPhone circle elements*/
   position: absolute;
-  right: 50%;
-  right: auto;
+  left: 50%;
+  left: auto;
   -webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
