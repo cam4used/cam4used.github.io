@@ -87,7 +87,7 @@ html, body {
 .cd-header {
   position: fixed;
   top: 0;
-  left: 0;
+  right: 0;
   z-index: 3;
   width: 100%;
   height: 50px;
@@ -116,7 +116,7 @@ html, body {
   clear: both;
 }
 .cd-header #cd-logo {
-  float: left;
+  float: right;
   margin: 18px 0 0 5%;
 }
 .cd-header #cd-logo img {
@@ -236,10 +236,10 @@ html, body {
     -ms-transform: translateY(-50%);
     -o-transform: translateY(-50%);
     transform: translateY(-50%);
-    left: 10%;
+    right: 10%;
     width: 50%;
     padding: 0;
-    text-align: left;
+    text-align: right;
     -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
     -moz-transition: -moz-transform 0.3s 0s, opacity 0.3s;
     transition: transform 0.3s, opacity 0.3s;
@@ -280,7 +280,7 @@ html, body {
     margin: 0 auto;
     height: 500px;
     top: 50%;
-    left: 0;
+    right: 0;
     -webkit-transform: translateZ(0);
     -moz-transform: translateZ(0);
     -ms-transform: translateZ(0);
@@ -342,7 +342,7 @@ html, body {
   }
   .cd-single-item .cd-caption {
     width: 50%;
-    float: left;
+    float: right;
     margin-top: 180px;
   }
   .cd-single-item:nth-child(2n) .cd-caption {
@@ -358,8 +358,8 @@ html, body {
     -ms-transform: translateY(-50%);
     -o-transform: translateY(-50%);
     transform: translateY(-50%);
-    left: 0;
-    text-align: left;
+    right: 0;
+    text-align: right;
     border-top: none;
     padding: 0;
     visibility: visible;
@@ -426,14 +426,14 @@ html, body {
     float: right;
   }
   .cd-single-item:nth-child(2n) .cd-image-container {
-    float: left;
+    float: right;
   }
 }
 @media only screen and (min-width: 1070px) {
   .cd-image-container {
     height: 402px;
     width: 35%;
-    float: left;
+    float: right;
     max-width: none;
     padding-top: 0;
   }
@@ -458,7 +458,7 @@ html, body {
     display: block;
     position: absolute;
     width: 402px;
-    left: 50%;
+    right: 50%;
     top: 50%;
     bottom: auto;
     right: auto;
@@ -500,7 +500,7 @@ html, body {
   box-sizing: content-box;
   position: absolute;
   top: -45px;
-  left: -10px;
+  right: -10px;
   width: 100%;
   height: 100%;
   border-color: #2f3246;
@@ -513,7 +513,7 @@ html, body {
 .cd-phone-frame::after, .cd-phone-frame::before {
   /*these are the iPhone circle elements*/
   position: absolute;
-  left: 50%;
+  right: 50%;
   right: auto;
   -webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
@@ -547,7 +547,7 @@ html, body {
   display: none;
   position: fixed;
   bottom: 0;
-  left: 0;
+  right: 0;
   z-index: 1;
   width: 100%;
   height: 80px;
@@ -562,7 +562,7 @@ html, body {
   display: block;
   height: 100%;
   width: 50%;
-  float: left;
+  float: right;
   overflow: hidden;
   text-indent: 100%;
   white-space: nowrap;
@@ -575,7 +575,7 @@ html, body {
 .cd-slider-nav a::before {
   /*this is the bacgrounf arrow - we have been used a before element to change the opacity on hover*/
   position: absolute;
-  left: 50%;
+  right: 50%;
   top: 50%;
   bottom: auto;
   right: auto;
@@ -598,7 +598,7 @@ html, body {
   opacity: 1;
 }
 .cd-slider-nav .cd-next {
-  border-left: 1px solid #3f435f;
+  border-right: 1px solid #3f435f;
 }
 .cd-slider-nav .cd-next::before {
   -webkit-transform: translateX(-50%) translateY(-50%) rotate(180deg);
@@ -638,7 +638,7 @@ html, body {
   /*top loading bar*/
   position: fixed;
   top: 0;
-  left: 0;
+  right: 0;
   height: 3px;
   width: 0;
   background-color: #f58780;
