@@ -1,2 +1,69 @@
+<form name="frmCalCommission" class="form-inline" role="form">
+	<script type="text/javascript">
+		String.prototype.replaceArray = function(find, replace) {
+			var replaceString = this;
+			var regex;
+			for (var i = 0; i < find.length; i++) {
+				regex = new RegExp(find[i], "g");
+				replaceString = replaceString.replace(regex, replace[i]);
+			}
+			return replaceString;
+		};
 
-<div class="singleContentGrid"><h2>عمولة حراج</h2><p>العمولة أمانة في ذمة المعلن سواء تمت المبايعة عن طريق الموقع أو بسببه، وموضحة قيمتها بما يلي:<h4>عمولة السيارات:</h4><ul><li><strong>بيع السيارات:</strong><span>1% من قيمة السيارة.</span></li><li><strong>سيارات للتنازل:</strong><span>1% من قيمة التنازل إذا كان التنازل بمقابل.</span></li><li><strong>تبادل السيارات:</strong><span>1% من قيمة المبادلة إذا كان هناك مقابل للمبادلة.</span></li></ul><h4>عمولة العقارات:</h4><ul><li><strong> بيع عقار عن طريق المالك:</strong><span> 1% من قيمة العقار.</span></li><li><strong> بيع عقار عن طريق وسيط:</strong><span>يعتبر الموقع شريك في الوساطة ويقتسم السعي مع الوسطاء بالتساوي ، أو يدفع المعلن للموقع 1% من قيمة العقار.</span></li><li><strong>تأجير عقارات:</strong><span>1% من قيمة عقد الإيجار الجديد فقط ، وليس العقد المجدد لنفس الشخص.</span></li></ul><h4>عمولة السلع و الخدمات الأخرى:</h4><ul><li><strong>بيع سلعة:</strong><span>1% من قيمة السلعة المباعة</span></li><li><strong>تأجير سلع(معدات وغيرها):</strong><span>1% من قيمة مبلغ الإيجار.</span></li><li><strong> تقديم خدمات:</strong><span> 1% من قيمة الخدمة المقدمة. وفي حالة تقديم الخدمة لأكثر من شخص فيتم تحويل 1% عن كل خدمة تم تقديمها.</span></li><li><strong>طلب سلعة أو خدمة:</strong><span> 1% من قيمة المبايعة.</span></li></ul><strong>إذا كانت قيمة العمولة أقل من 20 ريال سعودي ، فيمكن التصدق بها إلى أحد الجهات الخيرية الرسمية نيابة عن الموقع.</strong></p><br><h3 class="green">حساب العمولة</h3><div class="form-inline"><b>حساب قيمة العمولة:</b><br>إذا تم بيع السلعة بسعر<input type="number" pattern="\d*" class="form-control formcommission" name="total" maxlength="15" value="" style="margin: 0px 5px; text-align: center; direction: ltr;"><br> ريال فأن المبلغ المستحق دفعه هو:<span class="label label-primary" id="totalAmount"><span>0</span> </span>ريال</div><br><label for="showBreakdown"><input type="checkbox" id="showBreakdown" name="breakdown">&nbsp; إظهار التفاصيل</label><div class="info" style="display: none;"><br>التفاصيل:<br>عمولة الموقع مع ضريبة القيمة المضافة هي : <strong id="commissionValue">0</strong> ريال<br><br></div><div class="info" style="display: none;">مؤسسة موقع حراج للتجارة<br> سجل تجاري رقم: 1010283122<br> الرقم الضريبي: 300710482300003<br> قرطبة، الرياض ، المملكة العربية السعودية.<hr class="fullwidth"></div><br><div class="info" style="display: none;">مؤسسة موقع حراج للتجارة<br> سجل تجاري رقم: 1010283122<br> الرقم الضريبي: 300710482300003<br> قرطبة، الرياض ، المملكة العربية السعودية.<hr class="fullwidth"></div><br><h3 class="green">دفع العموله</h3><h3 class="green">الطريقة الأولى</h3>يمكنك استخدام التحويل البنكي لدفع العموله عن طريق إرسال حواله إلى حساباتنا في البنوك المحليه.<hr class="fullwidth"><div class="hui-col hui-col-md-3 hui-col-sm-2 mt-1"><div class="hui-item"><b>مصرف الراجحي</b><br><span class="black">مؤسسة موقع حراج للتجارة</span><br><b>رقم الحساب</b><span class="blue"> 521608010066975 </span><br><b>الايبان</b> SA46 8000 0521 6080 1006 6975<br></div><div class="hui-item"><b>البنك الأهلي التجاري</b><br><span class="black">مؤسسة موقع حراج للتجارة</span><br><b>رقم الحساب</b><span class="blue"> 26463101000104 </span><br><b>الايبان</b> SA69 1000 0026 4631 0100 0104<br></div><div class="hui-item"><b>بنك سامبا</b><br><span class="black">MAWQA HARAJ EST</span><br><b>رقم الحساب</b><span class="blue"> 9001201393 </span><br><b>الايبان</b> SA624000-0000-0090-0120-1393<br></div><div class="hui-item"><b>البنك السعودي الفرنسي</b><br><span class="black">Haraj Trading EST </span><br><b>رقم الحساب</b><span class="blue"> 96929400102 </span><br><b>الايبان</b> SA5655000000096929400102<br><br></div><div class="hui-item"><b>ساب</b><br><span class="black">مؤسسة موقع حراج للتجارة</span><br><b>رقم الحساب</b><span class="blue"> 020255220001 </span><br><b>الايبان</b> SA1945000000020255220001<br></div><div class="hui-item"><b>بنك البلاد</b><br><span class="black">يوسف صالح دغيمان البراكي الرشيدي</span><br><b>رقم الحساب</b><span class="blue"> 555108217630003 </span><br><b>الايبان</b> SA6415000555108217630003<br></div><div class="hui-item"><b>بنك الرياض</b><br><span class="black">موسسة موقع حراج للتجارة</span><br><b>رقم الحساب</b><span class="blue"> 2392342129940 </span><br><b>الايبان</b> SA7720000002392342129940<br></div><div class="hui-item"><b>البنك العربي الوطني</b><br><span class="black">يوسف صالح دغيمان البراكي الرشيدي</span><br><b>رقم الحساب</b><span class="blue"> 0108054779920015 </span><br><b>الايبان</b> SA2530400108054779920015<br></div><div class="hui-item"><b>بنك الإنماء</b><br><span class="black">يوسف صالح دغيمان البراكي الرشيدي</span><br><b>رقم الحساب</b><span class="blue"> 68200255188000 </span><br><b>الايبان</b> SA7005000068200255188000<br></div></div><br><br><hr class="fullwidth"><div></div><form class="commission-form"><p class="green">بعد إرسال المبلغ،يجب مراسلتنا عبر النموذج التالي لأجل تسجيل العمولة بأسم عضويتك ثم الحصول على مميزات الموقع الخاصة بالعملاء:</p><h4>نموذج تحويل العمولة</h4><div class="form-group"><label>أسم المستخدم :</label><input class="form-control form-control-size-sm" type="text" name="username" value="id70my"></div><div class="form-group"><label>مبلغ العمولة :</label><input class="form-control form-control-size-sm" type="number" name="price" size="20" maxlength="60" value="0"></div><div class="form-group"><label>البنك الذي تم التحويل إليه :</label><select name="bank" class="form-control form-control-size-md"><option value="">أختر أسم البنك</option><option value="مصرف الراجحي">مصرف الراجحي</option><option value="البنك الأهلي التجاري">البنك الأهلي التجاري</option><option value="سامبا">سامبا</option><option value="ساب">ساب</option><option value="بنك الرياض">بنك الرياض</option><option value="بنك البلاد">بنك البلاد</option><option value="بنك الانماء">بنك الانماء</option><option value="لبنك العربي الوطني">البنك العربي الوطني</option><option value="البنك السعودي الفرنسي">البنك السعودي الفرنسي</option><option value="تم التصدق بالعمولة">تم التصدق بالعمولة</option><option value="لم يتم التحويل">لم يتم التحويل</option></select></div><div class="form-group"><label>متى تم التحويل؟ :</label><select name="datetransfer" class="form-control form-control-size-md"><option value="تم التحويل اليوم">تم التحويل اليوم</option><option value="تم التحويل يوم أمس">تم التحويل يوم أمس</option><option value="تم التحويل قبل أمس">تم التحويل قبل أمس</option><option value="تم التحويل قبل 3 أيام">تم التحويل قبل 3 أيام</option><option value="تم التحويل قبل أسبوع">تم التحويل قبل أسبوع</option><option value="تم التحويل قبل شهر">تم التحويل قبل شهر</option><option value="لم يتم التحويل">لم يتم التحويل</option></select></div><div class="form-group"><label>أسم المحول :</label><input class="form-control form-control-size-md" type="text" name="moneysender" value=""></div><div class="form-group"><label>رقم الجوال المرتبط بعضويتك :</label><input class="form-control form-control-size-md" type="text" name="mobile" value="+966500620011"></div><div class="form-group"><label>رقم الإعلان :</label><input class="form-control form-control-size-md" type="text" name="link" value=""><span class="label label-primary">نرجو حذف الإعلان بعد الإنتهاء منه.</span></div><div class="form-group form-group-textarea"><label>ملاحظات :</label><textarea name="message" cols="6" rows="5" id="message" class="form-control form-control-size-lg"></textarea></div><div class="form-group" style="width: 80%;">نرجو الحرص على أن تكون معلومات التحويل صحيحة ودقيقه<br><br><div class="commissionSubmitButtonwrapper"><button type="submit" class="button  btn-lg btn-success">إرســـال</button><a href="/payment-policy">سياسة دفع العمولة</a></div></div></form></div>
+		function parseArabic(str) {
+			return Number(
+				str.replace(/[٠١٢٣٤٥٦٧٨٩]/g, function(d) {
+					return d.charCodeAt(0) - 1632;
+				})
+			);
+		}
+
+		function precisionRound(number, precision) {
+			var factor = Math.pow(10, precision);
+			return Math.floor(number * factor) / factor;
+		}
+
+		function funCalCommission(factor) {
+			$(".info").show();
+			var total = document.frmCalCommission.total.value;
+
+			total = parseInt(parseArabic(total));
+			var commissionFactor = 0.01;
+			var factorDiscountPercent;
+			if (!factor) {
+				factor = 0.01;
+				factorDiscountPercent = 1;
+			} else {
+				factorDiscountPercent = (factor * 100).toFixed(2);
+			}
+			var factorDiscount = factor;
+			var commissionValue = Math.floor(total * factorDiscount);
+			var commissionValueTax = commissionValue * 0.05;
+			commissionValueTax = precisionRound(commissionValueTax, 0);
+			var totalAmount = commissionValue + commissionValueTax;
+			var commissionValueBeforeDiscount = Math.floor(total * 0.01);
+
+			$("#commissionValue").text(commissionValue);
+			$("#commissionValueBeforeDiscount").text(
+				commissionValueBeforeDiscount
+			);
+
+			$("#commissionValueTax").text(commissionValueTax);
+			$("#totalAmount").text(commissionValue);
+			$("#factorDiscountPercent").text(factorDiscountPercent);
+		}
+	</script>
+
+	<b>حساب قيمة العمولة:</b>
+	<br>إذا تم بيع السلعة بسعر
+	<input type="text" pattern="\d*" class="form-control formcommission" name="total" size="8" maxlength="10" value="0" style="text-align: center; direction: ltr; " onkeyup="funCalCommission();">
+	ريال فأن المبلغ المستحق دفعه هو:
+	<span class="label label-primary" id="totalAmount"> 0</span> ريال
+	<div class="info" style="display:none">
+		<br>التفاصيل:
+		<br>
+		<br>عمولة الموقع   مع ضريبة القيمة المضافة هي :
+		<span id="commissionValue"> 0</span> ريال <br>
+	</div>
+
+	</form>
